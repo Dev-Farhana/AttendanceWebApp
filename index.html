@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT Attendance Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>SMIT Attendance Portal</h1>
+    <h5> Students Details </h5>
+    <div class="class-details">
+        <h2>Class Details</h2>
+        <!-- Form to add class details -->
+        <form id="class-form">
+            <label type="text" id="class-timings">Class Timings</label>
+            <select name="Class" id="">
+                <option value="">Fri: 8am-11am</option>
+                <option value="">Sat: 9am-12pm</option>
+                <option value="">Sun: 12pm-3pm </option>
+            </select>
+            <!-- <input type="text" id="schedule" placeholder="Schedule of Classes"> -->
+            <label for=" "  id="teacher">Teacher's Name </label>
+            <select name="" id="">
+                <option value=""> Miss Tayyaba</option>
+                <option value="">Miss Iqra</option>
+                <option value="">Miss  Fizza </option>
+            </select>
+            <label for=" "  id="course"> Course Name </label>
+            <select name="" id="">
+                <option value="">Fri: Graphic Design</option>
+                <option value="">Sat: Video Animation</option>
+                <option value="">Sun: Web Development </option>
+            </select>
+            <label for=" " id="batch" >Batch Number </label>
+            <select name="" id="">
+                <option value="">Batch:0</option>
+                <option value="">Batch:1</option>
+                <option value="">Batch:2 </option>
+            </select>
+            <button type="button" onclick="addClass()">Add Class</button>
+        </form>
+    </div>
+    <div class="attendance">
+        <h2>Mark Attendance</h2>
+        <!-- Form to mark attendance -->
+        <form id="attendance-form">
+            <input type="number" id="roll-number" placeholder="Enter Roll Number">
+            <select id="attendance-status">
+                <option value="Present" checked>Present</option>
+                <option value="Absent">Absent</option>
+                <option value="Late">Late</option>
+                <option value="Leave">Leave</option>
+            </select>
+            <button type="button" onclick="markAttendance()">Mark Attendance</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
